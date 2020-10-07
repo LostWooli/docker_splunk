@@ -1,0 +1,9 @@
+splunk:
+
+    environment:
+        SPLUNK_PASSWORD: test1234
+        SPLUNK_START_ARGS: --accept-license
+    image: splunk/splunk:latest
+    ports:
+        - 8000:8000
+        - 8089:8089
